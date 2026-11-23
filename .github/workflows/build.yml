@@ -1,0 +1,30 @@
+name: Auto Build & Sanitize Wordlists
+
+on:
+  push:
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run Build & Sanitizer Script
+        run: python scripts/build_all.py
+
+      - name: Commit and Push Updated Dist Files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions[bot]"
+          git add dist/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(auto-build): update compiled wordlists in dist/" && git push)
