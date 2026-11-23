@@ -1,0 +1,5 @@
+/healthcheck
+/api/v1/users
+/api/v1/login
+/api/v2/graphql
+/swagger-ui.html

@@ -1,0 +1,7 @@
+.env
+api/v1
+admin/
+.git/HEAD
+robots.txt
+config.json
+swagger.json

